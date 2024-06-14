@@ -110,7 +110,7 @@
                     loop: true,
                     autoplay: true,
                     path: './dist/js/data.json', // JSON 파일의 경로
-                })
+                });
             </script>
             <div class="section sec2" data-tooltip="ABOUT ME" data-anchor="aboutme">
                 <div id="about">
@@ -250,7 +250,7 @@
                         <div class="contact-info">
                             <div class="card">
                                 <img src="./images/main/email.png" alt="email" class="card-icon" />
-                                <p class="card-tit">eehd80yul@gmail.com</p>
+                                <p class="card-tit">blue_dog_@naver.com</p>
                             </div>
 
                             <div class="card">
@@ -272,24 +272,24 @@
             </div>
         </div>
         <script>
-            var square = document.getElementsByClassName('square')
+            var square = document.getElementsByClassName('square');
 
             for (var i = 0; i < square.length; i++) {
                 square[i].addEventListener('mouseenter', function () {
-                    this.classList.add('rubberBand')
+                    this.classList.add('rubberBand');
                     this.addEventListener(
                         'animationend',
                         function () {
-                            this.classList.remove('rubberBand')
+                            this.classList.remove('rubberBand');
                         },
-                        false,
-                    )
-                })
+                        false
+                    );
+                });
             }
 
-            AOS.init()
+            AOS.init();
 
-            console.clear()
+            console.clear();
 
             new fullpage('#fullpage', {
                 //options here
@@ -307,26 +307,26 @@
                 responsiveWidth: 1025,
 
                 onLeave: function () {
-                    jQuery('.section [data-aos]').removeClass('aos-animate')
+                    jQuery('.section [data-aos]').removeClass('aos-animate');
                 },
                 onSlideLeave: function () {
-                    jQuery('.slide [data-aos]').removeClass('aos-animate')
+                    jQuery('.slide [data-aos]').removeClass('aos-animate');
                 },
                 afterSlideLoad: function () {
-                    jQuery('.slide.active [data-aos]').addClass('aos-animate')
+                    jQuery('.slide.active [data-aos]').addClass('aos-animate');
                 },
                 afterLoad: function () {
-                    jQuery('.section.active [data-aos]').addClass('aos-animate')
+                    jQuery('.section.active [data-aos]').addClass('aos-animate');
                     //jQuery('.fp-table.active .aos-init').addClass('aos-animate');
                 },
-            })
+            });
 
             document.addEventListener('DOMContentLoaded', () => {
                 new window['Cursor']({
                     count: 2,
                     targets: ['a'],
-                })
-            })
+                });
+            });
         </script>
 
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>

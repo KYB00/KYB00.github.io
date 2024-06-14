@@ -48,6 +48,7 @@
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script defer src="https://unpkg.com/custom-cursor@latest/dist/cursor.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.sunsean.com/idTabs/jquery.idTabs.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -58,7 +59,7 @@
     </head>
     <body>
         <header id="header">
-            <h1 class="logo">Hong Gil Dong</h1>
+            <h1 class="logo">Kim Ye Boon</h1>
             <div class="menu" id="menu">
                 <li class="depth1"><a href="#intro">INTRO</a></li>
                 <li class="depth2"><a href="#aboutme">ABOUT ME</a></li>
@@ -73,6 +74,7 @@
                 <!-- https://lottiefiles.com/kr/free-animations/blob -->
                 <!-- cdn 추가: <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script> -->
 
+                <!--메인페이지/애니메이션 추가-->
                 <div id="home">
                     <div class="container-index gradient-purple-blue">
                         <div class="under-container bubble" style="height: 90vh">
@@ -87,13 +89,13 @@
                                     <div class="square" style="margin-left: 30px">I</div>
                                     <div class="square">'</div>
                                     <div class="square">m</div>
-                                    <div class="square" style="margin-left: 30px">G</div>
-                                    <div class="square">I</div>
-                                    <div class="square">L</div>
-                                    <div class="square">D</div>
+                                    <div class="square" style="margin-left: 30px">Y</div>
+                                    <div class="square">E</div>
+                                    <div class="square"> </div>
+                                    <div class="square">B</div>
+                                    <div class="square">O</div>
                                     <div class="square">O</div>
                                     <div class="square">N</div>
-                                    <div class="square">G</div>
                                 </div>
                             </div>
                         </div>
@@ -172,12 +174,14 @@
                                 </svg>
                             </div>
                         </div>
+
+                        <!--소개 페이지-->
                         <div class="about-txt-wrap" data-aos="fade-up" data-aos-once="true">
                             <div class="abtxt">
                                 <div class="about-me">
                                     <span
                                         >안녕하세요. <br />
-                                        신입 웹 전문가 홍길동입니다!</span
+                                        신입 UI 디자이너 김예분입니다!</span
                                     >
                                 </div>
                                 <div class="about-intro">
@@ -192,6 +196,8 @@
                     </div>
                 </div>
             </div>
+
+            <!--포트폴리오 페이지1-->
             <div class="section pfs sec4" data-tooltip="MONAMI" data-anchor="monami">
                 <div class="portfolio_wrap">
                     <div class="port-img">
@@ -249,6 +255,7 @@
                 </div>
             </div>
 
+            <!--포트폴리오 페이지2-->
             <div class="section pfs sec5" data-tooltip="MONAMI" data-anchor="monami">
                 <div class="portfolio_wrap">
                     <div class="port-img">
@@ -306,7 +313,30 @@
                 </div>
             </div> 
 
-            <div class="section pfs sec6" data-tooltip="MORE INFO" data-anchor="moreinfo">
+              <!--포트폴리오 페이지3/기타 디자인-->
+              <div class="section pfs sec6">
+             <div class="portfolio_wrap">
+               <header class="section-header">
+                 <h3 class="section-title">My Portfolio</h3>
+                
+                 <!--페이지3/탭-->
+                <div class="tab">
+                    <ul class="tabnav"> 
+                        <li><a href="#tab01">All</a></li> 
+                        <li><a href="#tab02">RESPONSIVE</a></li> 
+                        <li><a href="#tab03">DESIGN</a></li> 
+                        <li><a href="#tab04">etc</a></li> 
+                        </div> 
+                    </ul>
+                        <div id="tab01">If you haven't checked1111111111</div> 
+                        <div id="tab02">idTabs is only a si333333322222</div>
+                        <div id="tab03">idTabs is only a 333344444444444</div>
+                        <div id="tab04">idTabs is ondddddd</div>
+                </header>
+             </div>       
+
+
+            <div class="section pfs sec7" data-tooltip="MORE INFO" data-anchor="moreinfo">
                 <div class="contact-wrapper">
                     <div class="contact-inner">
                         <div class="contact-info">
@@ -326,6 +356,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!--footer-->
                     <div class="last-comment">
                         <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 만들어진 사이트입니다.</p>
                         <span>ⓒ HONGGILDONG PORTFOLIO</span>

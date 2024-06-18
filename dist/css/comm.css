@@ -563,14 +563,14 @@ legend {
 }
 
 .portfolio_wrap {
-    display: flex;
-    position: relative;
-    width: 1440px;
-    height: 100vh;
-    margin: 0 auto;
-    overflow: hidden;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  position: relative;
+  width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 .portfolio_wrap .port-img {
   display: flex;
@@ -602,6 +602,51 @@ legend {
 /*.sec5 {
     background: #f4f4f4 url(../../images/portfolio/portfolio2.jpg) no-repeat 50% 50% / contain;
 }*/
+
+.tabcontent{margin-left:calc(50% - 200px); margin-top:30px;
+  padding:30px;
+  box-sizing:border-box;
+  width:400px;
+  border-radius: 10px;
+  background:#fff;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+
+input[type="radio"] {display:none;}
+input[type="radio"] + label {display:inline-block;
+  padding:10px 20px;
+  background:#9a7dab;
+  color:#fff;
+  border-radius: 10px;
+  font-size: 14px; cursor:pointer;
+ }
+
+input[type = "radio"]:checked + label {
+  background:#fff;color:#9a7dab;
+  border: 1px solid #9a7dab;
+
+}
+.content-box {
+  display:none;
+  margin-top:10px;
+  padding:10px;
+  width:340px;
+  height:250px;
+  font-size:30px;
+  box-sizing:border-box;
+  border-radius:10px;
+  text-align:center;
+  background: #efe6f4;
+  color:#666;
+ 
+}
+
+input[id = "tabmenu01"]:checked ~ .content01 {display:block;}
+input[id = "tabmenu02"]:checked ~ .content02 {display:block;}
+input[id = "tabmenu03"]:checked ~ .content03 {display:block;}
+/*card 끝*/
+
+
 .port-texts {
   position: relative;
   width: 40%;
@@ -721,14 +766,12 @@ legend {
   position: relative;
   width: 7vw;
   height: 50px;
-  color: #fff;
-  /*border: 1px solid #000000;*/
-  border-radius: 4px;
-  background: #666666;
+  color: #000000;
+  border: 1px solid #000000;
 }
 .pfb2 .but:hover {
-    background: #2a23b4;
-    color: #fff;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .pfb2 .but::after {
   position: absolute;
@@ -756,39 +799,6 @@ legend {
   transition: 0.5s outline-offset cubic-bezier(0.2, 0.8, 0.25, 0.8), 0.5s outline-color cubic-bezier(0.2, 0.8, 0.25, 0.8), 0.5s outline cubic-bezier(0.2, 0.8, 0.25, 0.8);
 }
 
-#portfolio .portfolio-wrap {
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
-    transition: 0.3s;
-}
-
-.section-header h3::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 3px;
-    background: #dbd0c0;
-    bottom: 0;
-    left: calc(50% - 20px);
-}
-.section-header h3 {
-    font-size: 32px;
-    color: #111;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
-    position: relative;
-    padding-bottom: 15px;
-}
-
-element.style {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    visibility: visible;
-    animation-name: fadeInUp;
-}
-
 .fp-tooltip {
   color: #4e4e4e !important;
 }
@@ -801,67 +811,6 @@ element.style {
 .fp-watermark {
   display: none;
 }
-
-/*탭 시작*/
-.tab{
-    float:left;
-    width:600px;
-    height:290px;
-}
-.tabnav{
-    font-size:0;
-    width:600px;
-    border:1px
-    solid #ddd;}
-
-.tabnav li{
-    display: inline-block;
-    height:46px;
-    text-align:center;
-    border-right:1px
-    solid #ddd;}
-
-.tabnav li a:before{
-    content:"";
-    position:absolute;
-    left:0;
-    top:0px;
-    width:100%;
-    height:3px; }
-
-.tabnav li a.active:before{
-    background:#7ea21e;
-}
-
-.tabnav li a.active{
-    border-bottom:1px
-    solid #fff;
-}
-
-.tabnav li a{
-    position:relative;
-    display:block;
-    background: #f8f8f8;
-    color: #000;
-    padding:0 30px;
-    line-height:46px;
-    text-decoration:none;
-    font-size:16px;}
-
-.tabnav li a:hover,
-.tabnav li a.active{
-    background:#fff;
-    color:#7ea21e;
-}
-
-.tabcontent{
-    padding: 20px;
-    height:244px;
-    border:1px solid
-    #ddd; border-top:none;
-}
-
-/*탭 여기까지*/
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
@@ -1199,11 +1148,6 @@ element.style {
   opacity: 1;
 }
 
-#portfolio-flters li {
-    display: flex;
-    height: auto;
-}
-
 .last-comment {
   display: flex;
   width: 100%;
@@ -1310,7 +1254,6 @@ element.style {
     max-width: none;
     padding: 0% 5%;
   }
-
   .sec2 .bubble-wrap .bpb {
     width: 100%;
   }
@@ -1601,39 +1544,4 @@ element.style {
   .port-texts .text-info .pf-info li .pf_info-info {
     font-size: 12px;
   }
-  
-
-  .container6 {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto
-}
-
-@media (min-width: 576px) {
-    .container {
-        max-width:540px
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width:720px
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width:960px
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width:1140px
-    }
-}
-
-  
 }/*# sourceMappingURL=comm.css.map */

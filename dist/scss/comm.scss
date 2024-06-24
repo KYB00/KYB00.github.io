@@ -18,6 +18,8 @@
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
+    background: #fff;
+
     .logo {
         display: flex;
         justify-content: center;
@@ -541,8 +543,8 @@
         position: relative;
         width: 7vw;
         height: 50px;
-        color: #000000;
-        border: 1px solid #000000;
+        color: #696969;
+        border: 1px solid #a0a0a0;
         border-radius: 10px;
         // overflow: hidden;
 
@@ -1482,7 +1484,7 @@ input[type="radio"] + label:hover {
 }
 .content-box .image-container {
   width: 22%; /* 4개의 아이템을 위해 너비 조정 */
-  height: 150px; /* 필요에 따라 높이 조정 */
+  height: 250px; /* 필요에 따라 높이 조정 */
   margin: 10px;
    background: url(../../images/portfolio/PORTFOLIO-06.jpg) no-repeat 0 0;
    background-size: cover;

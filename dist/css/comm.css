@@ -595,8 +595,12 @@ legend {
   background-position: top;
   transition: all 3s;
 }
-.portfolio_wrap .port-img .imges-wrap .monami {
-  background: url("../../images/portfolio/portfolio1.jpg") no-repeat 0 0;
+.portfolio_wrap .port-img .imges-wrap .national {
+  background: url("../../images/portfolio/portfolio_1440.svg") no-repeat 0 0;
+  background-size: cover;
+}
+.portfolio_wrap .port-img .imges-wrap .nintendo {
+  background: url("../../images/portfolio/portfolio_1440.svg") no-repeat 0 0;
   background-size: cover;
 }
 
@@ -730,10 +734,13 @@ legend {
   height: 50px;
   color: #000000;
   border: 1px solid #000000;
+  border-radius: 10px;
 }
 .pfb2 .but:hover {
-  text-shadow: 0 0 20px rgb(0, 0, 0);
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  background: #25216d;
+  /*text-shadow: 0 0 20px rgba(0, 0, 0, 03);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2);*/
 }
 .pfb2 .but::after {
   position: absolute;

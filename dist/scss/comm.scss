@@ -395,8 +395,13 @@
                 background-position: top;
                 transition: all 3s;
             }
-            .monami {
-                background: url('../../images/portfolio/portfolio1.jpg') no-repeat 0 0;
+            .national {
+                background: url('../../images/portfolio/portfolio_1440.svg') no-repeat 0 0;
+                background-size: cover;
+            }
+
+            .nintendo {
+                background: url('../../images/portfolio/portfolio_1440.svg') no-repeat 0 0;
                 background-size: cover;
             }
         }
@@ -538,11 +543,14 @@
         height: 50px;
         color: #000000;
         border: 1px solid #000000;
+        border-radius: 10px;
         // overflow: hidden;
 
         &:hover {
-            text-shadow: 0 0 20px rgba(0, 0, 0, 03);
-            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            background: #25216d;
+            /*text-shadow: 0 0 20px rgba(0, 0, 0, 03);
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2);*/
         }
 
         &::after {

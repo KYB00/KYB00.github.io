@@ -81,12 +81,22 @@
         }
 
         .word {
-            margin-left: 8px;
-            color: rgb(255, 149, 149);
+            // margin-left: 8px;
+            color: rgb(149, 204, 255);
             font-size: 0.9rem;
         }
 
         .quote {
+            font-family: 'Noto Sans KR' !important;
+            font-size: 0.9rem;
+        }
+
+        .word2 {
+            color: rgb(155, 155, 155);
+            font-size: 0.9rem;
+        }
+
+        .quote2 {
             font-family: 'Noto Sans KR' !important;
             font-size: 0.9rem;
         }

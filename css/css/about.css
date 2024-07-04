@@ -71,11 +71,18 @@
   word-break: keep-all;
 }
 .About_container #typo_3 .word {
-  margin-left: 8px;
-  color: rgb(255, 149, 149);
+  color: rgb(149, 204, 255);
   font-size: 0.9rem;
 }
 .About_container #typo_3 .quote {
+  font-family: "Noto Sans KR" !important;
+  font-size: 0.9rem;
+}
+.About_container #typo_3 .word2 {
+  color: rgb(155, 155, 155);
+  font-size: 0.9rem;
+}
+.About_container #typo_3 .quote2 {
   font-family: "Noto Sans KR" !important;
   font-size: 0.9rem;
 }

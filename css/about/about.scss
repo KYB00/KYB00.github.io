@@ -54,7 +54,7 @@
             user-select: none;
             animation: text_gradient 8s linear infinite alternate;
 
-            background: linear-gradient(90deg, rgb(208, 209, 142) 0%, rgb(255, 255, 255) 25%, rgb(167, 183, 255) 50%, rgb(255, 255, 255) 75%, rgb(252, 255, 49) 100%);
+            background: linear-gradient(90deg, rgb(208, 209, 142) 0%, rgb(255, 255, 255) 25%, rgb(167, 255, 252) 50%, rgb(255, 255, 255) 75%, rgb(252, 255, 49) 100%);
             background-size: 1000% 100%;
 
             background-clip: text;
@@ -82,7 +82,7 @@
 
         .word {
             // margin-left: 8px;
-            color: rgb(149, 204, 255);
+            color: #31fff5;
             font-size: 0.9rem;
         }
 
